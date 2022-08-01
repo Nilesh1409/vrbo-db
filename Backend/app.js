@@ -41,7 +41,7 @@ app.use(CheckoutRouter);
 
 connectDatabase()
 .then(()=>{
-    app.listen(port,()=>
+    app.listen(|process.env.PORT ||port,()=>
     {
         console.log(`Server connected to port ${port}`);
     })
